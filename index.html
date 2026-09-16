@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TextVoice for Android — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the TextVoice text-to-speech app on Android. No accounts, no analytics, no uploads.">
+<style>
+  :root {
+    --bg: #0b0c10;
+    --panel: #14161d;
+    --text: #e9ebf0;
+    --muted: #9aa1ad;
+    --line: #242833;
+    --accent: #6c8cff;
+    --accent-soft: rgba(108, 140, 255, 0.12);
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --text: #1c1f26;
+      --muted: #5b616d;
+      --line: #e6e8ee;
+      --accent: #3a5bdc;
+      --accent-soft: rgba(58, 91, 220, 0.08);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, sans-serif;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 22px 96px; }
+  header { margin-bottom: 40px; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 600; letter-spacing: .02em;
+    color: var(--accent); background: var(--accent-soft);
+    padding: 6px 12px; border-radius: 999px;
+  }
+  h1 { font-size: 32px; line-height: 1.2; margin: 18px 0 6px; letter-spacing: -0.01em; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0; }
+  .lead {
+    margin-top: 22px; font-size: 18px; color: var(--text);
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 16px; padding: 20px 22px;
+  }
+  h2 { font-size: 20px; margin: 40px 0 10px; letter-spacing: -0.005em; }
+  p { margin: 12px 0; color: var(--text); }
+  .muted { color: var(--muted); }
+  ul, ol { margin: 12px 0; padding-left: 22px; }
+  li { margin: 8px 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  strong { font-weight: 650; }
+  .divider { height: 1px; background: var(--line); border: 0; margin: 44px 0; }
+  footer { color: var(--muted); font-size: 14px; }
+  code { background: var(--accent-soft); padding: 1px 6px; border-radius: 6px; font-size: 14px; }
+  .tablewrap { overflow-x: auto; margin: 16px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 13px; letter-spacing: .02em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <span class="badge">● Privacy by design</span>
+  <h1>TextVoice for Android — Privacy Policy</h1>
+  <p class="updated">Last updated: 16 September 2026</p>
+  <div class="lead">
+    TextVoice turns text into speech entirely on your phone. Your text is never uploaded to be
+    read aloud, and the developer collects nothing. There is no server behind this app.
+  </div>
+  <p class="muted">Using TextVoice on iPhone or iPad? See the
+    <a href="https://perry-lee.github.io/textvoice-privacy/">iOS privacy policy</a> instead —
+    that version syncs History through your own iCloud, which this one does not.</p>
+</header>
+
+<h2>We do not collect your data</h2>
+<p>The developer does not collect, receive, store, or sell any personal information from this
+app. There is no account to create, no sign-in, and no user profile.</p>
+<p>The app contains <strong>no analytics, advertising, crash-reporting, or tracking SDKs</strong>.
+It does not read or transmit your advertising ID.</p>
+
+<h2>What stays on your device</h2>
+<p>Everything you put into the app, and everything it produces, stays in the app's private
+storage on your phone:</p>
+<ul>
+  <li><strong>The text you type, paste, import, or scan.</strong> It is never uploaded.</li>
+  <li><strong>Documents you import</strong> (TXT, PDF, EPUB, Word) — parsed on your device.</li>
+  <li><strong>Photos you select for text recognition.</strong> Recognition runs on device using
+      bundled Google ML Kit models. The images are not uploaded, and the app does not keep
+      copies beyond what is needed to read the text from them.</li>
+  <li><strong>Generated audio and reading history</strong>, stored in the app's private folder
+      and in a local database on your device. Nothing is synced to any cloud.</li>
+  <li><strong>Your settings</strong> (voice, language, speed, theme), stored locally.</li>
+</ul>
+<p>None of this is readable by us or by any third party. You can delete history entries and
+clear cached files inside the app, and uninstalling the app removes all of it.</p>
+
+<h2>When the app uses the internet</h2>
+<p>The app is designed to work offline. It connects to the network in only three situations,
+none of which sends us your content:</p>
+<ol>
+  <li><strong>One-time voice model download.</strong> On first use, the app downloads the speech
+      models (about 380 MB) over HTTPS from the public Hugging Face repository
+      <code>huggingface.co/Supertone/supertonic-3</code>. This is a plain download. No
+      information about you or your text is sent. As with any web request, Hugging Face's
+      servers will see your device's IP address; their handling of it is governed by their own
+      privacy policy.</li>
+  <li><strong>Importing a web article.</strong> If you paste a link, the app fetches that page
+      directly from the website you specified, in order to extract the article text. That
+      website receives a normal web request from your device and will see your IP address and
+      user agent. The app sends the request only when you ask it to, and only to the address
+      you entered. Nothing is routed through us.</li>
+  <li><strong>Opening Google Play links</strong>, for example to manage a subscription. These
+      open in Google Play or your browser and are handled by Google.</li>
+</ol>
+<p>Speech is always generated on your phone. Text is never sent anywhere to be read aloud.</p>
+
+<h2>Purchases</h2>
+<p>TextVoice Pro is sold through Google Play Billing. Payments, subscriptions, and refunds are
+handled entirely by Google. The developer never sees your payment details. The app only
+receives from Google the fact that a purchase is active, so that it can unlock features.
+Google's handling of purchase data is covered by the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2>Google Play services</h2>
+<p>Two features rely on components provided by Google Play services, which run in Google's own
+process on your device rather than inside the app:</p>
+<ul>
+  <li><strong>Document scanning</strong> uses the Google Play services document scanner.</li>
+  <li><strong>Play Billing</strong> is used for purchases, as described above.</li>
+</ul>
+<p>Data handled by these components is subject to Google's privacy policy.</p>
+
+<h2>Sharing and exporting audio</h2>
+<p>The app can export generated audio as M4A or WAV and hand it to the Android share sheet.
+This happens only when you choose to do it, and the file goes to whichever app you pick. The
+developer is not involved in that transfer and does not receive the file.</p>
+
+<h2>Permissions</h2>
+<div class="tablewrap">
+<table>
+  <tr><th>Permission</th><th>Why the app asks for it</th></tr>
+  <tr><td>Internet, network state</td><td>Download the voice models once; fetch a web page you ask to import</td></tr>
+  <tr><td>Foreground service, media playback</td><td>Keep reading aloud while the app is in the background</td></tr>
+  <tr><td>Notifications</td><td>Show playback controls while reading</td></tr>
+</table>
+</div>
+<p>The app does not request access to your camera, contacts, location, microphone, or files on
+your device. Photos are chosen through the Android photo picker, which gives the app only the
+images you select.</p>
+
+<h2>AI-generated speech</h2>
+<p>TextVoice produces synthetic speech using on-device AI models. Please do not use it to
+impersonate other people, to create misleading material, or for any unlawful purpose, and
+please disclose that audio is AI-generated when you publish it.</p>
+
+<h2>Feedback email</h2>
+<p>If you tap "Send feedback" in Settings, your email app opens a pre-filled message addressed
+to the developer. The draft includes the app version, your device manufacturer and model, and
+your Android version — the things we would otherwise have to ask you first. Nothing is sent
+until you press send in your own email app, and you can edit or delete any of it beforehand.</p>
+
+<h2>Children</h2>
+<p>TextVoice is not directed at children and is not designed for use by children under 13.</p>
+
+<h2>Your choices</h2>
+<p>Because nothing leaves your device, there is no account to close and no data for us to delete
+on your behalf. Within the app you can delete individual history entries, clear cached files,
+and remove the downloaded voice models. Uninstalling the app removes all remaining data from
+your device.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the updated version will be posted at this address with a new
+"Last updated" date.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy? Email <a href="mailto:lpgreat@qq.com">lpgreat@qq.com</a>.</p>
+
+<hr class="divider">
+<footer>© 2026 TextVoice. All rights reserved.</footer>
+
+</div>
+</body>
+</html>
