@@ -73,14 +73,15 @@
 <header>
   <span class="badge">● Privacy by design</span>
   <h1>TextVoice for Android — Privacy Policy</h1>
-  <p class="updated">Last updated: 16 September 2026</p>
+  <p class="updated">Last updated: 3 October 2026</p>
   <div class="lead">
     TextVoice turns text into speech entirely on your phone. Your text is never uploaded to be
     read aloud, and the developer collects nothing. There is no server behind this app.
   </div>
   <p class="muted">Using TextVoice on iPhone or iPad? See the
     <a href="https://perry-lee.github.io/textvoice-privacy/">iOS privacy policy</a> instead —
-    that version syncs History through your own iCloud, which this one does not.</p>
+    that version syncs History through your own iCloud. This one has no sync; the only copy that
+    can leave your phone is Android's own backup, described below.</p>
 </header>
 
 <h2>We do not collect your data</h2>
@@ -99,11 +100,14 @@ storage on your phone:</p>
       bundled Google ML Kit models. The images are not uploaded, and the app does not keep
       copies beyond what is needed to read the text from them.</li>
   <li><strong>Generated audio and reading history</strong>, stored in the app's private folder
-      and in a local database on your device. Nothing is synced to any cloud.</li>
+      and in a local database on your device. There is no sync service; see
+      <a href="#android-backup">Android backup</a> for the one exception.</li>
   <li><strong>Your settings</strong> (voice, language, speed, theme), stored locally.</li>
 </ul>
 <p>None of this is readable by us or by any third party. You can delete history entries and
-clear cached files inside the app, and uninstalling the app removes all of it.</p>
+clear cached files inside the app, and uninstalling the app removes all of it from your
+device (see <a href="#android-backup">Android backup</a> for the copy Android may keep in your
+Google account).</p>
 
 <h2>When the app uses the internet</h2>
 <p>The app is designed to work offline. It connects to the network in only three situations,
@@ -141,6 +145,16 @@ process on your device rather than inside the app:</p>
 </ul>
 <p>Data handled by these components is subject to Google's privacy policy.</p>
 
+<h2 id="android-backup">Android backup</h2>
+<p>If backup is turned on for your device, Android's built-in backup service may save a copy of
+your reading history (the text and your progress), your settings, and your list of recently
+imported web pages to <strong>your own Google account</strong>, so they come back when you
+reinstall the app or move to a new phone. Generated audio files and the voice models are not
+included.</p>
+<p>This backup is made and stored by Android and Google, not by us. The developer cannot access
+it. On Android 9 and later it is end-to-end encrypted with your device's screen lock. You can
+turn it off, or delete it, in your device's Settings under Google › Backup.</p>
+
 <h2>Sharing and exporting audio</h2>
 <p>The app can export generated audio as M4A or WAV and hand it to the Android share sheet.
 This happens only when you choose to do it, and the file goes to whichever app you pick. The
@@ -174,10 +188,11 @@ until you press send in your own email app, and you can edit or delete any of it
 <p>TextVoice is not directed at children and is not designed for use by children under 13.</p>
 
 <h2>Your choices</h2>
-<p>Because nothing leaves your device, there is no account to close and no data for us to delete
-on your behalf. Within the app you can delete individual history entries, clear cached files,
-and remove the downloaded voice models. Uninstalling the app removes all remaining data from
-your device.</p>
+<p>Because we never receive your data, there is no account to close and no data for us to
+delete on your behalf. Within the app you can delete individual history entries, clear cached
+files, and remove the downloaded voice models. Uninstalling the app removes all remaining data
+from your device; any Android backup in your Google account is managed in your device settings,
+as described above.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy changes, the updated version will be posted at this address with a new
